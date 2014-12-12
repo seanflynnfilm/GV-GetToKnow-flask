@@ -25,7 +25,8 @@ def recent_stories_from(country):
             'title': details['title'],
             'link': details['link'],
             'author': details['author'],
-            'contentSnippet': h.unescape(details['contentSnippet'])
+            'contentSnippet': h.unescape(details['contentSnippet']),
+            'country': country
             } )
     return stories
 
